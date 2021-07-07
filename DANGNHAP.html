@@ -1,0 +1,229 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="./index.css" />
+    <link type="text/css" rel="stylesheet" href="./dangnhap.css" />
+    <link rel="icon" href="img/logo (1).png">
+    
+    <!-- <link href="styles/layout2.css" rel="stylesheet"> -->
+
+
+    <meta name="description" content="DESIRE">
+    <meta name="keywords" content="DESIRE, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ĐĂNG NHẬP - ĐĂNG KÝ THÀNH VIÊN -  DESIRE</title>
+
+
+
+    <script>
+        function Click1(){
+            document.getElementById("a").innerHTML = "Đã đăng nhập thành công";
+        }
+       
+    </script>
+
+    <script>
+        function Click2(){
+            document.getElementById("b").innerHTML = "Đã đăng ký thành công";
+        }
+    </script>
+
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Page Preloder-->
+    <div id="preloder"></div>
+
+    <script src="login.js">
+       
+    </script>
+
+<!--Header Section Begin-->
+
+<div class="container">
+    <div class="inner-header">
+        <div class="row">
+            <div class="col-lg-2 col-md-2">
+                <div class="logo">
+                    <a href="index.html">
+                        <img height=80 width=150 src="img/logo (1).png" alt="">
+                    </a>
+                    
+                </div>
+                <div class="login">
+                    <a href="DANGNHAP.html"><img height=40px width=35px src="img/iconlogin.png" alt=""></a>
+                </div>
+
+            </div>
+            <!--Tim kiem san pham Begin-->
+            <div class="box">
+                <div class="container">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="Search..." />
+                </div>
+                <div class="container-fluid">
+
+                    <a href="GIOHANG.html"><img height=20px width=20px src="img/cart-icon.png" alt=""></a>
+                    <span class="hd-cart-count">3</span>
+                    <div class="topright"></div>
+
+                </div>
+            </div>
+            <!--Tim kiem san pham End-->
+
+
+
+            <div id="menu">
+                <nav class="nav-menu mobile-menu">
+                    <ul>
+                        <li class="action"><a href="index.html">Shop</a>
+                            <ul class="sub-menu">
+                                <li><a href="./T-SHIRT.html">T-SHIRT</a></li>
+                                <li><a href="./PANTS.html">PANTS</a></li>
+                                <li><a href="./BAGS.html">BAGS</a></li>
+
+                            </ul>
+                        <li class="action"><a href="ABOUT.html">About</a></li>
+                        <li class="action"><a href="COLLECTIONS.html">Colections</a></li>
+                        <li class="action"><a href="index.html">Blogs</a></li>
+                        <li class="action"><a href="index.html">Contents</a></li>
+                        <li class="action"><a href="index.html">Sale!</a></li>
+                        </li>
+
+
+                    </ul>
+                </nav>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<br>
+<!--Header End-->
+<br/><br/><br/>
+
+<!--Login Begin-->
+<div class="loginPage">
+    <form action="action_page.html" method="POST">
+        <div class="container-login">
+            <h2 style="text-align: center;">Đăng nhập</h2>
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <input type="button" value="Login" onclick="Click1();">
+            <br/>
+            <label id="a"></label>
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="container-login" style="background-color:#f1f1f1">
+            <a href="./DANGNHAP.html"><button type="button" class="cancelbtn">Cancel</button></a>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+
+    </form>
+    <br/><br/><br/>
+    <form action="action_page.html" method="POST"> 
+        <div class="container-signup">
+            <h2 style="text-align: center;">Đăng ký</h2>
+            <label for="uname"><b>Họ và tên</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="numberphone"><b>Số điện thoại</b></label>
+            <input type="text" placeholder="Enter Numberphone" name="number" required>
+           
+            <label for="psw"><b>Mật khẩu</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw"><b>Xác nhận lại mật khẩu</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="date"><b>Ngày tháng năm sinh</b>
+            <input type="date" placeholder="Enter Date" name="date" required>
+
+            <br/><br/><input type="checkbox" value="xacnhan_dk" name="xacnhan_dieukhoan" />Tôi chấp nhận điều khoản
+
+            <input type="button" value="SignUp" onclick="Click2();">
+            <br/>
+            <label id="b"></label>
+        </div>
+    </form>
+</div>
+
+<!--Login End-->
+
+<!--Footer Begin-->
+<div class="row">
+    <div class="column side">
+
+        <ul>
+            <img height=150 width=200 src="img/logo (1).png" alt="">
+            <li>Address: 200 Sư Vạn Hạnh HCM</li>
+            <li>Phonge: +65 11.118.888</li>
+            <li>Email:desire@gmail.com</li>
+        </ul>
+
+
+    </div>
+
+    <div class="column middle">
+        <h5>Information</h5>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Checkout</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Serivius</a></li>
+        </ul>
+        <h5>My Account</h5>
+        <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Shopping Cart</a></li>
+            <li><a href="#">Shop</a></li>
+        </ul>
+    </div>
+
+    <div class="column phai">
+        <h5>Join Our Newsletter Now</h5>
+        <p>Get E-mail updates about our latest shop and special offers.</p>
+        <form action="#" class="subscribe-form">
+            <input type="text" placeholder="Enter Your Mail">
+            <button type="button">Subscribe</button>
+        </form>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="copyright-text-align:center">
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright &copy;
+        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made
+        with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://Desire.com"
+            target="_blank">DESIRE</a>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    </div>
+    <div class="payment-pic">
+        <img src="img/payment-method.png" alt="">
+
+    </div>
+</div>
+
+</div>
+<!--Foter End-->
+</body>     
+</html>   

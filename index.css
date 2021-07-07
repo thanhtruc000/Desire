@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html,
+body {
+    height: 100%;
+    font-family: "Multi", sans-serif;
+}
+.menu {
+    position: relative;
+}
+.container-fluid {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    padding: 3px;
+    background: white;
+}
+.logo {
+    position: absolute;
+    top: -15px;
+    left: 100px;
+}
+.login{
+   position: absolute;
+   top: 2px ;
+   left: auto;
+    padding: 5px;
+   
+}
+.container input#search {
+    margin-right: 40px;
+    width: 180px;
+    height: 30px;
+    background: white;
+    border: none;
+    font-size: 20px;
+    float: right;
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+h5 {
+    color: black;
+    font-weight: bold;
+    font-family: "Muli", sans-serif;
+}
+#menu ul {
+    background: black;
+    list-style-type: none;
+    text-align: center;
+}
+#menu li {
+    color: black;
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: -5px;
+}
+#menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+#menu a:hover {
+    background: #c0c0c0;
+    display: block;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+}
+#menu li {
+    position: relative;
+}
+#menu li:hover .sub-menu {
+    display: block;
+}
+.sub-menu li {
+    margin-left: 0 !important;
+}
+.sub-menu > ul {
+    display: none !important;
+}
+
+/*San pham ban chay Begin*/
+.exem-container {
+    display: flex;
+    background: #e8e8e8;
+    padding: 4px;
+}
+.exem-element {
+    /*background-color: #339966;*/
+    margin: 1px;
+    /*color: #339966;*/
+    min-height: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+/*ABOUT US*/
+.content-about {
+   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    
+}
+.col-content-about {
+    margin: 0 5px;
+    padding: 30px;
+    background-color: grey;
+    width: 45%;
+    float: left;
+    text-align: center;
+    color: white;
+    height: 520px;
+    
+}
+.col-content-about h2 {
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/*Footer*/
+/* Tạo ba cột không bằng nhau, float cạnh nhau */
+.column {
+    float: left;
+    padding: 50px;
+}
+
+/* Cột bên trái */
+.column.side {
+    width: 30%;
+}
+
+/* Cột bên phải*/
+.column.phai {
+    width: 10%;
+}
+
+/* Cột chính giữa */
+.column.middle {
+    width: 30%;
+}
+
+/* Clear float khác sau các cột */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Bố cục linh hoạt: ba cột xếp chồng lên nhau thay vì cạnh nhau khi màn hình 
+  có chiều rộng dưới 600px */
+@media screen and (max-width: 600px) {
+    .column.side,
+    .column.middle {
+        width: 100%;
+    }
+}
+
+/* Định dạng footer */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 4px;
+    text-align: center;
+}
+.exam-element .flex-grow-ele1 img {
+    width: 200px;
+}
+/*Hang trung bay*/
+.topSale {
+    color: black;
+    padding: 30px;
+    height: 380px;
+    text-align: center;
+}
+.khoi {
+    width: 100%;
+    padding: 5px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    text-align: center;
+}
+
+.khoi .DisplayItem:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+.Clearfix {
+    clear: both;
+}
+.khoi .DisplayItem {
+    width: 31.33333333%;
+    margin: 0 1%;
+    display: inline-block;
+    position: relative;
+}
+.Khoi .DisplayItem img {
+    height: 320px;
+    width: 330px;
+}
+.infortopSale {
+    width: 200px;
+    float: left;
+}
+
+.khoi .DisplayItem .layer1 {
+    width: 360px;
+    height: 320px;
+    position: absolute;
+    top: 0;
+    left: 19%;
+    margin: 0 auto;
+    z-index: 2;
+    opacity: 0.4;
+    background-image: -webkit-linear-gradient(left, white 0%, grey 50%, #e1cf6c 100%);
+}

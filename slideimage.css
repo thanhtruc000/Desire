@@ -1,0 +1,22 @@
+/*San pham ban chay*/
+.slide {
+    width: 200px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 30px;
+    border-radius: 10px;
+    position: relative;
+    color: black;
+}
+.chuyen-slide {
+    width: 9999px;
+    transition: all 0.5s;
+    color: black;
+    position: relative;
+}
+.chuyen-slide img {
+    width: 200px;
+    height: 300px;
+    float: left;
+}

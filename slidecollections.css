@@ -1,0 +1,22 @@
+/*Collections*/
+.slide-collections {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 80px;
+    border-radius: 10px;
+    position: relative;
+    color: black;
+}
+.chuyen-slide-collections{
+    width: 9999px;
+    transition: all 0.5s;
+    color: black;
+    position: relative;
+}
+.chuyen-slide-collections img {
+    width: 500px;
+    height: 500px;
+    float: left;
+}
